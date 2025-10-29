@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caesar Cipher</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="../script/app.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Caesar Cipher</h1>
+        <nav class="header-nav" aria-label="Primary">
+            <a href="../index.html">Home</a>
+            <a href="caesar.html" aria-current="page">Caesar</a>
+            <a href="binary.html">Binary</a>
+            <a href="morse.html">Morse</a>
+        </nav>
+        <div class="header-actions">
+            <button type="button" id="themeToggle" class="ghost" aria-label="Toggle theme">Light mode</button>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <form class="card" id="cipherForm" novalidate>
+                <div class="field">
+                    <label for="message">Message</label>
+                    <textarea id="message" placeholder="Type your message" rows="4"></textarea>
+                </div>
+                <div class="field-row">
+                    <div class="field">
+                        <label for="shift">Shift</label>
+                        <input type="number" id="shift" min="0" max="25" value="3">
+                    </div>
+                    <div class="field">
+                        <label>Mode</label>
+                        <div class="segmented">
+                            <button type="button" id="encode">Encrypt</button>
+                            <button type="button" id="decode">Decrypt</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="actions">
+                    <button type="button" id="run">Run</button>
+                    <button type="button" id="clear">Clear</button>
+                </div>
+                <div class="field">
+                    <label for="output">Result</label>
+                    <textarea id="output" readonly rows="4"></textarea>
+                </div>
+                <div class="actions">
+                    <button type="button" id="copy">Copy</button>
+                </div>
+                <p class="error" id="error" aria-live="polite"></p>
+            </form>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy; Gabizela 2025</p>
+    </footer>
+</body>
+</html>
+

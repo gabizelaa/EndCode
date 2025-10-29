@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="EndCode • Minimal tools to encode/decode: Caesar, Binary, Morse. Runs in Python (Pyodide) with a clean, responsive UI.">
+    <meta property="og:title" content="EndCode - Encode/Decode Toolkit">
+    <meta property="og:description" content="Caesar, Binary and Morse conversions running locally in your browser (Pyodide).">
+    <meta property="og:type" content="website">
+    <title>Home • EndCode</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="script/app.js" defer></script>
+    
+</head>
+<body>
+    <header>
+        <h1>EndCode</h1>
+        <nav class="header-nav" aria-label="Primary">
+            <a href="index.html" aria-current="page">Home</a>
+            <a href="pages/caesar.html">Caesar</a>
+            <a href="pages/binary.html">Binary</a>
+            <a href="pages/morse.html">Morse</a>
+        </nav>
+        <div class="header-actions">
+            <button type="button" id="themeToggle" class="ghost" aria-label="Toggle theme">Light mode</button>
+        </div>
+    </header>
+    <main>
+        <div class="container home">
+            <div class="card hero">
+                <h1>EndCode</h1>
+                <p class="lead">Explore these simple tools to encode and decode text, binary, and Morse, running directly in your browser with Python (Pyodide).</p>
+                <div class="feature-grid">
+                    <a class="feature-card" href="pages/caesar.html">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7v2H4a2 2 0 0 0-2 2v7a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2v-7a2 2 0 0 0-2-2h-1V9a7 7 0 0 0-7-7zm-5 9V9a5 5 0 1 1 10 0v2H7z"/></svg>
+                        </div>
+                        <h3>Caesar Cipher</h3>
+                        <p>Encrypt and decrypt text by shifting letters.</p>
+                    </a>
+                    <a class="feature-card" href="pages/binary.html">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h4v4H4V4zm6 0h10v4H10V4zM4 10h10v4H4v-4zm12 0h4v4h-4v-4zM4 16h4v4H4v-4zm6 0h10v4H10v-4z"/></svg>
+                        </div>
+                        <h3>Binary</h3>
+                        <p>Convert between text and binary (UTF‑8).</p>
+                    </a>
+                    <a class="feature-card" href="pages/morse.html">
+                        <div class="icon">
+                            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4v2H3v-2zm6 0h6v2H9v-2zm8 0h4v2h-4v-2zM3 7h2v2H3V7zm4 10h2v2H7v-2zm10-10h2v2h-2V7z"/></svg>
+                        </div>
+                        <h3>Morse</h3>
+                        <p>Convert between text and Morse code.</p>
+                    </a>
+                </div>
+                <p class="lead">Im gabizela, the developer of this project! Your feedback is very welcome and contributions are encouraged! If you find it useful, please consider giving a ⭐ star on my GitHub repository.</p>
+                <div class="actions">
+                    <a href="https://github.com/gabizelaa" target="_blank" rel="noopener noreferrer"><button type="button">GitHub</button></a>
+                    <a href="https://github.com/gabizelaa/EndCode" target="_blank" rel="noopener noreferrer"><button type="button">Repository</button></a>
+                    <a href="https://www.linkedin.com/in/gabrielabrandaomartins" target="_blank" rel="noopener noreferrer"><button type="button">LinkedIn</button></a>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>Copyright &copy; Gabizela 2025</p>
+    </footer>
+</body>
+</html>
