@@ -95,10 +95,10 @@ button.ghost:hover {
 
 /* Container principal */
 .container {
-    max-width: 35%;
-    margin: auto;
-    padding: 6vh;
-
+    width: 100%;
+    max-width: 720px;
+    margin: 24px auto;
+    padding: 0 16px;
 }
 
 /* Home container mais largo para grid de 3 cards */
@@ -167,6 +167,15 @@ button.ghost:hover {
 .feature-card svg { width: 24px; height: 24px; fill: var(--accent-600); }
 .feature-card h3 { text-align: center; }
 .feature-card p { text-align: center; color: var(--muted); }
+
+/* Ajustes extras para telas muito estreitas (ex.: 320px) */
+@media (max-width: 360px) {
+    .container.home { padding: 0 12px; }
+    .hero { gap: 16px; }
+    .feature-grid { grid-template-columns: 1fr; gap: 12px; }
+    .feature-card { padding: 12px; }
+    .feature-card .icon { width: 40px; height: 40px; }
+}
 
 .hero .actions {
     display: flex;
@@ -313,9 +322,21 @@ textarea[readonly] {
     text-align: center;
 }
 
-/* Quebra para telas pequenas */
-@media (max-width: 600px) {
-    .field-row {
-        grid-template-columns: 1fr;
+/* Responsividade */
+@media (max-width: 1024px) {
+    .container.home { max-width: 920px; }
+}
+
+@media (max-width: 768px) {
+    header { flex-direction: column; gap: 12px; padding: 16px; }
+    header .header-nav {
+        position: static;
+        left: auto; top: auto; transform: none;
+        justify-content: center; flex-wrap: wrap; gap: 12px;
     }
+    .container, .container.home { max-width: 100%; padding: 0 16px; }
+}
+
+@media (max-width: 600px) {
+    .field-row { grid-template-columns: 1fr; }
 }
