@@ -11,6 +11,7 @@
     --accent-600: #7c3aed;
     --accent-500: #8b5cf6;
     --accent-100: #f3e8ff;
+    --accent-700: #581c87;
 }
 
 /* Tema escuro (padrão) */
@@ -73,12 +74,26 @@ header .header-nav {
     color: #ffffff;
     text-decoration: none;
     opacity: 0.9;
+    padding: 8px 12px;           /* padroniza altura */
+    border-radius: 999px;        /* mesmo formato do ativo */
+    display: inline-flex;        /* alinha verticalmente o texto */
+    align-items: center;
+    justify-content: center;
+    line-height: 1;              /* evita altura extra */
+    border: 0;                   /* sem borda para não variar altura */
 }
 
 .header-nav a:hover {
     opacity: 1;
     background: rgba(255, 255, 255, 0.08);
-    border-color: #ffffff;
+}
+
+/* Link ativo como botão roxo escuro (sempre visível) */
+header .header-nav a[aria-current="page"] {
+    background: var(--accent-700);
+    color: #ffffff;
+    font-weight: 800;
+    opacity: 1;
 }
 
 /* Botão fantasma para header sobre fundo colorido */
